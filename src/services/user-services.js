@@ -2,7 +2,7 @@ async function getAvatar(cb) {
   const user = JSON.parse(localStorage.getItem("user"));
   const { username } = user;
   const req = await fetch(
-    `http://travel-app-backend-rsschool.herokuapp.com/users/get-avatar/${username}`,
+    `https://travel-app-backend-rsschool.herokuapp.com/users/get-avatar/${username}`,
     {
       method: "GET",
     }
