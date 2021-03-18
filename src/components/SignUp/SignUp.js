@@ -27,7 +27,7 @@ export default class SignUp extends Component {
     formData.append("name", this.state.name);
     formData.append("avatar", this.fileInput.files[0]);
     const signUp = await fetch(
-      "http://travel-app-backend-rsschool.herokuapp.com/api/auth/signup",
+      "https://travel-app-backend-rsschool.herokuapp.com/api/auth/signup",
       {
         method: "POST",
         body: formData,
