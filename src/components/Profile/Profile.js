@@ -44,7 +44,7 @@ export default class Profile extends Component {
     formData.append("login", username);
     formData.append("avatar", this.fileInput.files[0]);
     await fetch(
-      "http://travel-app-backend-rsschool.herokuapp.com/api/user/change-avatar",
+      "https://travel-app-backend-rsschool.herokuapp.com/api/user/change-avatar",
       {
         method: "POST",
         body: formData,
