@@ -80,7 +80,7 @@ async function signInHandler() {
   formData.append("login", this.state.login);
   formData.append("password", this.state.password);
   const signIn = await fetch(
-    "http://travel-app-backend-rsschool.herokuapp.com/api/auth/signin",
+    "https://travel-app-backend-rsschool.herokuapp.com/api/auth/signin",
     {
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
